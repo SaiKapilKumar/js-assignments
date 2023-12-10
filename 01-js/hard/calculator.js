@@ -52,4 +52,12 @@ class Calculator {
   }
 }
 
+const calculate = new Calculator();
+
+calculate.set(10);
+
+calculate.add(5);
+
+console.log(calculate.getResult()); // 15
+
 module.exports = Calculator;
