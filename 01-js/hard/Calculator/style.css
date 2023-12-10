@@ -1,0 +1,241 @@
+
+/* font-family */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* variables for styling */
+:root{
+    --background-color: #d9efff;
+    --background-calculator: linear-gradient(180deg,#000000 0%,rgba(23,24,26,1) 100%);
+    --font-family: 'Poppins', sans-serif;
+    --text-color-1: rgb(128, 128, 128);
+    --text-color-2: rgb(255, 255, 255);
+    --button-color-1: rgba(255, 98, 0, .87);
+    --button-color-2: #606060;
+    --button-color-3: #2f3036;
+    --font-size-1:24px;
+
+
+}
+
+/* background-color */
+body{
+    background-color: var(--background-color);
+}
+
+/* calculator background */
+
+.calc-background{
+    background: var(--background-calculator);
+    width: 375px;
+    height: 812px;
+    margin: 0 auto;
+    border-radius: 20px;
+    margin-top: 50px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    position: relative;
+    top: 100px; 
+    display: flex;
+    flex-direction: column;
+}
+
+/* text-box */
+.text-box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-size: 40px;
+    position: relative;
+    top: 15%;
+    gap: 10px;
+    margin-right: 24px;
+}
+
+/* text-box input */
+.text-box #input{
+    font-family: var(--font-family);
+    font-size: 24px;
+    color: var(--text-color-1);
+}
+
+/* text-box output */
+.text-box #output{
+    font-family: var(--font-family);
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--text-color-2);
+}
+
+/* buttons */
+
+.Buttons{
+    height: 390px;
+    width: 320px;
+    margin: 0 auto;
+    position: relative;
+    top: 32%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 20px;
+}
+
+
+/* buttons */
+
+
+.Buttons div{
+    grid-gap: 30px;
+    border-radius: 16px;
+    background-color: var(--button-color-2);
+    color: var(--text-color-2);
+    font-family: var(--font-family);
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+/* hover-effect color light grey */
+.Buttons div:hover{
+    background-color: lightgrey;
+    color: black;
+}
+
+/* button AC */
+.Buttons .button1{
+    font-size: var(--font-size-1);
+}
+
+/* button Back */
+.Buttons .button2 .image img{
+    width: 28px;  /* adjust as needed */
+    height: 28px; /* adjust as needed */
+    filter: brightness(0) invert(1);
+}
+/* on hover */
+.Buttons .button2:hover .image{
+    background-color: lightgrey;
+}
+.Buttons .button2:hover .image img{
+    filter: brightness(0) invert(0);
+}
+
+/* button / */
+.Buttons .button3{
+    font-size: var(--font-size-1);
+    background-color: var(--button-color-1);
+}
+
+
+/* button * */
+.Buttons .button4{
+    background-color: var(--button-color-1);
+}
+.Buttons .button4 .multiply img{
+    width: 65px;  /* adjust as needed */
+    height: 65px; /* adjust as needed */
+    filter: brightness(0) invert(1);
+}
+.Buttons .button4 .multiply{
+    background-color: var(--button-color-1);
+}
+/* on hover */
+.Buttons .button4:hover .multiply{
+    background-color: lightgrey;
+}
+.Buttons .button4:hover .multiply img {
+    filter: brightness(0) invert(0);
+}
+
+/* button - */
+.Buttons .button8{
+    font-size: var(--font-size-1);
+    background-color: var(--button-color-1);
+}
+
+/* button + */
+.Buttons .button12{
+    font-size: var(--font-size-1);
+    background-color: var(--button-color-1);
+    height: 155%;
+    position: relative;
+    top: 7px;
+}
+
+
+/* button = */
+.Buttons .button16{
+    font-size: var(--font-size-1);
+    background-color: var(--button-color-1);
+    position: relative;
+    top: 48px;
+    height: 155%;
+}
+
+/* button 7 */
+.Buttons .button5{
+    background-color: var(--button-color-3);
+}
+
+/* button 8 */
+.Buttons .button6{
+    background-color: var(--button-color-3);
+}
+
+/* button 9 */
+.Buttons .button7{
+    background-color: var(--button-color-3);
+}
+
+/* button 4 */
+.Buttons .button9{
+    background-color: var(--button-color-3);
+}
+
+/* button 5 */
+.Buttons .button10{
+    background-color: var(--button-color-3);
+}
+
+/* button 6 */
+.Buttons .button11{
+    background-color: var(--button-color-3);
+}
+
+/* button 1 */
+.Buttons .button13{
+    background-color: var(--button-color-3);
+}
+
+/* button 2 */
+.Buttons .button14{
+    background-color: var(--button-color-3);
+}
+
+/* button 3 */
+.Buttons .button15{
+    background-color: var(--button-color-3);
+}
+
+/* button 0 */
+.Buttons .button17{
+    background-color: var(--button-color-3);
+    grid-column: 1/3;
+}
+
+/* button . */
+.Buttons .button18{
+    background-color: var(--button-color-3);
+}
+
+
+
